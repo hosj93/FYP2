@@ -39,8 +39,9 @@ namespace BankCardPersonalization
             StringBuilder instructOne = new StringBuilder();
             instructOne.AppendLine("You are required to choose an image or a photo that you wish to customize and print it ");
             instructOne.AppendLine("on bank card. You have two options :");
-            instructOne.AppendLine("Option 1 : Upload your own image or photo");
+            instructOne.AppendLine("Option 1 : Random an image from our gallery");
             instructOne.AppendLine("Option 2 : Choose an image or photo from our gallery");
+            instructOne.AppendLine("Option 3 : Upload your own image or photo");
             instructOne.AppendLine("You may be directed to the next page once the timer finish counting down or you may ");
             instructOne.AppendLine("press 'Next' button to proceed to the next page");
             labelInstructOne.Text = instructOne.ToString(); //.Replace(Environment.NewLine, "<br />");
@@ -182,9 +183,9 @@ namespace BankCardPersonalization
                 {
                     if ((sec % 2) != 0)
                     {
-                        lblTimerSec.ForeColor = System.Drawing.Color.Blue;
-                        lblTimerHour.ForeColor = System.Drawing.Color.Blue;
-                        lblTimerMin.ForeColor = System.Drawing.Color.Blue;
+                        lblTimerSec.ForeColor = System.Drawing.Color.Red;
+                        lblTimerHour.ForeColor = System.Drawing.Color.Red;
+                        lblTimerMin.ForeColor = System.Drawing.Color.Red;
                     }
                     else
                     {
@@ -218,6 +219,7 @@ namespace BankCardPersonalization
             {
                 Form2 f2 = new Form2();
                 f2.Show();
+                this.Hide();
                 //timerLoad.Stop();
             }
         }
