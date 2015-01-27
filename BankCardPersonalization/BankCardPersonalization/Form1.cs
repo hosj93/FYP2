@@ -20,6 +20,7 @@ namespace BankCardPersonalization
         public bool imageLoaded = false;
         public bool imgAvailable = false;
         Image selectedImage;
+        public Bitmap bmpSelectedImg;
         public Form1()
         {
             InitializeComponent();
@@ -63,7 +64,7 @@ namespace BankCardPersonalization
             if (imageDirectory.ShowDialog() == DialogResult.OK)
             {
                 selectedImage = Image.FromFile(imageDirectory.FileName);
-                Bitmap bmpSelectedImg = new Bitmap(selectedImage, 1036, 664);
+                bmpSelectedImg = new Bitmap(selectedImage, 1036, 664);
                 Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
                 graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                 graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -120,7 +121,7 @@ namespace BankCardPersonalization
                     panelImgGallery.Visible = false;
                     imageLoaded = true;
                     galleryImg = this.imageList1.Images[imgIndex];
-                    Bitmap bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
+                    bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
                     Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
                     graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                     graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
@@ -208,27 +209,11 @@ namespace BankCardPersonalization
             
         }
 
-        private void imageConfirmation()
-        {
-            string imgConfirm = "Is This The Image That You Wish To Customize ?";
-            timerFunction(false);
-            DialogResult imgConfirmation = MessageBox.Show(imgConfirm, "Image Confirmation",
-            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-
-            if (imgConfirmation == DialogResult.Yes)
-            {
-                Form2 f2 = new Form2();
-                f2.Show();
-                this.Hide();
-                //timerLoad.Stop();
-            }
-        }
-
         private void btnImgProNext_Click(object sender, EventArgs e)
         {
             string argRndImg = "Do You Wish To Random An Image From Our Gallery ?";
             string noImgFound = "No Image Available For Customization Process !" + Environment.NewLine + argRndImg;
-
+            
             if (selectedImageBox.Image == null)
             {
                 DialogResult noImgResult = MessageBox.Show(noImgFound, "No Image Found",
@@ -240,7 +225,24 @@ namespace BankCardPersonalization
             }
             else
             {
-                imageConfirmation();
+               imageConfirmation();
+            }
+        }
+
+        private void imageConfirmation()
+        {
+            string imgConfirm = "Is This The Image That You Wish To Customize ?";
+            timerFunction(false);
+            DialogResult imgConfirmation = MessageBox.Show(imgConfirm, "Image Confirmation",
+            MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
+
+            if (imgConfirmation == DialogResult.Yes)
+            {
+                Form2 f2 = new Form2();
+                f2.SetImagePreview(bmpSelectedImg.Clone() as Image);
+                f2.Show();
+                this.Hide();
+                //timerLoad.Stop();
             }
         }
 
@@ -256,7 +258,7 @@ namespace BankCardPersonalization
                     panelImgGallery.Visible = false;
                     imageLoaded = true;
                     galleryImg = this.imageList1.Images[imgIndex];
-                    Bitmap bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
+                    bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
                     Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
                     graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
                     graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;

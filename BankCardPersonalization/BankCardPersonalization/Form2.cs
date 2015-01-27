@@ -14,6 +14,8 @@ namespace BankCardPersonalization
 {
     public partial class Form2 : Form
     {
+        Form1 f1 = new Form1();
+        public static Bitmap image;
         public Form2()
         {
                 
@@ -21,6 +23,11 @@ namespace BankCardPersonalization
             DisplayInstructTwo();
             //ImageTesting();
             ImgGradientPrompt();
+        }
+
+        public void SetImagePreview(Image previewImg)
+        {
+            previewImgBox.Image = previewImg;
         }
 
         private void ImgGradientPrompt()
