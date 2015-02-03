@@ -16,20 +16,99 @@ namespace BankCardPersonalization
     {
         Form1 f1 = new Form1();
         public static Bitmap image;
+        public Image prvImage;
+        public Image origImage;
         public Form2()
         {
-                
             InitializeComponent();
+            f1.timerFunction(false);
             DisplayInstructTwo();
-            //ImageTesting();
             ImgGradientPrompt();
+            cmbCarEffectImplement();
         }
+       // private void refreshImage()
+        //{
+         //   ApplyImageFilter(true, oriImage, previewImage);
+       // }
 
-        public void SetImagePreview(Image previewImg)
+        public void cmbCarEffectImplement()
         {
-            previewImgBox.Image = previewImg;
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Default);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Gaussian3x3);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Gaussian5x5);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Gaussian7x7);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Median3x3);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Median5x5);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Median7x7);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Median9x9);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Mean3x3);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Mean5x5);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.LowPass3x3);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.LowPass5x5);
+            cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Sharpen3x3);
+
+            cmbCartoonEffect.SelectedIndex = 0;
         }
 
+   
+        public void SetImagePreview(Image oriImage, Image previewImg)
+        {
+            //ImageProp imgProp = new ImageProp();
+            previewImgBox.Image = previewImg;
+            prvImage = previewImg;
+            origImage = oriImage;
+            previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            ApplyImageFilter(true, prvImage, origImage);
+        }
+
+        private void ApplyImageFilter(bool preview, Image prvImage, Image origImage)
+        {
+            if (prvImage == null || cmbCartoonEffect.SelectedIndex == -1)
+            {
+                return;
+            }
+
+            Bitmap selectedSource = null;
+            Bitmap bitmapResult = null;
+
+            if (preview == true)
+            {
+                selectedSource = new Bitmap(prvImage);
+            }
+            else
+            {
+                //selectedSource = new Bitmap (oriImage);
+            }
+
+            if (selectedSource != null)
+            {
+                if ((CartoonEffect.SmoothingFilterType)cmbCartoonEffect.SelectedItem == CartoonEffect.SmoothingFilterType.Default)
+                {
+                    bitmapResult = new Bitmap(origImage);
+                }
+                else
+                {
+                    CartoonEffect.SmoothingFilterType filterType =
+                        ((CartoonEffect.SmoothingFilterType)cmbCartoonEffect.SelectedItem);
+
+                    bitmapResult = selectedSource.CartoonEffectFilter(
+                                       (byte)60, filterType);
+                    //trcThreshold.Value
+                }
+            }
+
+            if (bitmapResult != null)
+            {
+                if (preview == true)
+                {
+                    previewImgBox.Image = bitmapResult;
+                }
+                else
+                {
+                    //resultBitmap = bitmapResult;
+                }
+            }
+        }
         private void ImgGradientPrompt()
         {
             //label1.Visible = false;
@@ -58,5 +137,19 @@ namespace BankCardPersonalization
             instructTwo.AppendLine("on the 'Next' button.");
             lblInstructTwo.Text = instructTwo.ToString();
         }
+
+        private void FilterLevelChanged(object sender, EventArgs e)
+        {
+            ApplyImageFilter(true, prvImage, origImage);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("muahaha");
+        }
+
+       
     }
 }
+
+

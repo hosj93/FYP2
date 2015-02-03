@@ -36,14 +36,19 @@
             this.previewImgBox = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.listViewImgGradient = new System.Windows.Forms.ListView();
             this.imgGradient = new System.Windows.Forms.ImageList(this.components);
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbCartoonEffect = new System.Windows.Forms.ComboBox();
+            this.lblCartoonEffect = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.gBoxStepTwo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previewImgBox)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gBoxStepTwo
@@ -108,16 +113,6 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(603, 113);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // listViewImgGradient
             // 
             this.listViewImgGradient.Alignment = System.Windows.Forms.ListViewAlignment.Left;
@@ -142,11 +137,65 @@
             this.imgGradient.Images.SetKeyName(6, "qwewqeq.png");
             this.imgGradient.Images.SetKeyName(7, "qwqeqwe.png");
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(603, 126);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.cmbCartoonEffect);
+            this.panel1.Controls.Add(this.lblCartoonEffect);
+            this.panel1.Location = new System.Drawing.Point(926, 195);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(287, 74);
+            this.panel1.TabIndex = 3;
+            // 
+            // cmbCartoonEffect
+            // 
+            this.cmbCartoonEffect.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cmbCartoonEffect.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCartoonEffect.FormattingEnabled = true;
+            this.cmbCartoonEffect.ItemHeight = 16;
+            this.cmbCartoonEffect.Location = new System.Drawing.Point(8, 41);
+            this.cmbCartoonEffect.Name = "cmbCartoonEffect";
+            this.cmbCartoonEffect.Size = new System.Drawing.Size(270, 24);
+            this.cmbCartoonEffect.TabIndex = 1;
+            this.cmbCartoonEffect.SelectedIndexChanged += new System.EventHandler(this.FilterLevelChanged);
+            // 
+            // lblCartoonEffect
+            // 
+            this.lblCartoonEffect.AutoSize = true;
+            this.lblCartoonEffect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCartoonEffect.Location = new System.Drawing.Point(3, 13);
+            this.lblCartoonEffect.Name = "lblCartoonEffect";
+            this.lblCartoonEffect.Size = new System.Drawing.Size(261, 24);
+            this.lblCartoonEffect.TabIndex = 0;
+            this.lblCartoonEffect.Text = "Cartoon Effect (Smoothing)";
+            this.lblCartoonEffect.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1017, 380);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(196, 69);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1177, 723);
+            this.ClientSize = new System.Drawing.Size(1319, 723);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxStepTwo);
@@ -159,6 +208,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.previewImgBox)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -174,6 +225,10 @@
         private System.Windows.Forms.ListView listViewImgGradient;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ImageList imgGradient;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblCartoonEffect;
+        private System.Windows.Forms.ComboBox cmbCartoonEffect;
+        private System.Windows.Forms.Button button1;
 
     }
 }

@@ -19,8 +19,11 @@ namespace BankCardPersonalization
         public int sec = 00;
         public bool imageLoaded = false;
         public bool imgAvailable = false;
-        Image selectedImage;
-        public Bitmap bmpSelectedImg;
+        public string imageName;
+        public string pathName;
+        //Image selectedImage;
+        public Bitmap bmpSelectedImg = null;
+        public Bitmap previewSelectedImg = null;
         public Form1()
         {
             InitializeComponent();
@@ -30,7 +33,7 @@ namespace BankCardPersonalization
             //timerLoad.Enabled = true;
         }
 
-        private void timerFunction(bool timerExecuter)
+        public void timerFunction(bool timerExecuter)
         {
             timerLoad.Enabled = timerExecuter;
         }
@@ -45,14 +48,13 @@ namespace BankCardPersonalization
             instructOne.AppendLine("Option 3 : Upload your own image or photo");
             instructOne.AppendLine("You may be directed to the next page once the timer finish counting down or you may ");
             instructOne.AppendLine("press 'Next' button to proceed to the next page");
-            labelInstructOne.Text = instructOne.ToString(); //.Replace(Environment.NewLine, "<br />");
+            labelInstructOne.Text = instructOne.ToString(); 
         }
 
         private void buttonSelectImg_Click(object sender, EventArgs e)
         {
             imageLoaded = false;
             grpSelectedImg.Visible = true;
-            //label1.Visible = true;
             selectedImageBox.Image = null;
             panelImgGallery.Visible = false;
             OpenFileDialog imageDirectory = new OpenFileDialog();
@@ -63,16 +65,25 @@ namespace BankCardPersonalization
 
             if (imageDirectory.ShowDialog() == DialogResult.OK)
             {
-                selectedImage = Image.FromFile(imageDirectory.FileName);
-                bmpSelectedImg = new Bitmap(selectedImage, 1036, 664);
-                Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
-                graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-                graphicImg.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-                //textInputImage.Text = imageDirectory.FileName;
-                selectedImageBox.Image = bmpSelectedImg;
-                selectedImageBox.SizeMode = PictureBoxSizeMode.Zoom;
+                StreamReader picStreamReader = new StreamReader(imageDirectory.FileName);
+                bmpSelectedImg = (Bitmap)Bitmap.FromStream(picStreamReader.BaseStream);
+                picStreamReader.Close();
+
+                previewSelectedImg = bmpSelectedImg.CopyToSquareCanvas(selectedImageBox.Width);
+                selectedImageBox.Image = previewSelectedImg;
+                selectedImageBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 imageLoaded = true;
+
+                //selectedImage = Image.FromFile(imageDirectory.FileName);
+                //bmpSelectedImg = new Bitmap(selectedImage, 1036, 664);
+                //Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
+                //graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                //graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                //graphicImg.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+                ////textInputImage.Text = imageDirectory.FileName;
+                //selectedImageBox.Image = bmpSelectedImg;
+                //selectedImageBox.SizeMode = PictureBoxSizeMode.Zoom;
+                //imageLoaded = true;
 
             }
         }
@@ -80,9 +91,6 @@ namespace BankCardPersonalization
         private void pictureBoxPaint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            // Draw a string on the PictureBox.
-            //g.DrawString("Your Image Will Be Display Here",
-            //new Font("Arial", 10), System.Drawing.Brushes.Blue, new Point(150, 150));
             if (imageLoaded == false)
             {
                 g.DrawString("Your Image Will Be Display Here",
@@ -92,7 +100,6 @@ namespace BankCardPersonalization
 
         private void buttonImgGallery_Click(object sender, EventArgs e)
         {
-            //label1.Visible = false;
             grpSelectedImg.Visible = false;
             panelImgGallery.Visible = true;
             int i = 0;
@@ -121,14 +128,18 @@ namespace BankCardPersonalization
                     panelImgGallery.Visible = false;
                     imageLoaded = true;
                     galleryImg = this.imageList1.Images[imgIndex];
-                    bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
-                    Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
-                    graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-                    graphicImg.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-                    selectedImageBox.Image = bmpSelectedImg;
-                    selectedImageBox.SizeMode = PictureBoxSizeMode.Zoom;
+                    imageName = this.imageList1.Images.Keys[imgIndex].ToString();
+                    pathName = "C:\\Users\\Jack\\Pictures\\" + imageName;
+
+                    StreamReader picStreamReader = new StreamReader(pathName);
+                    bmpSelectedImg = (Bitmap)Bitmap.FromStream(picStreamReader.BaseStream);
+                    picStreamReader.Close();
+
+                    previewSelectedImg = bmpSelectedImg.CopyToSquareCanvas(selectedImageBox.Width);
+                    selectedImageBox.Image = previewSelectedImg;
+                    selectedImageBox.SizeMode = PictureBoxSizeMode.StretchImage;
                     grpSelectedImg.Visible = true;
+                      
                 }
             }
 
@@ -136,7 +147,7 @@ namespace BankCardPersonalization
 
         private void timerLoad_Tick(object sender, EventArgs e)
         {
-            string argError = "Please Choose An Image In Order To Proceed !";
+            //string argError = "Please Choose An Image In Order To Proceed !";
             string argRndImg = "Press Yes If You Wish To Random An Image From Our Gallery.";
             string noImgMsg = "No Image Found For Customization Process" + Environment.NewLine + argRndImg;
             
@@ -159,7 +170,6 @@ namespace BankCardPersonalization
                 {
                     if (selectedImageBox.Image == null)
                     {
-                        timerFunction(false);
                         DialogResult noImgResult = MessageBox.Show(noImgMsg, "No Image Found",
                         MessageBoxButtons.YesNo, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
 
@@ -238,11 +248,15 @@ namespace BankCardPersonalization
 
             if (imgConfirmation == DialogResult.Yes)
             {
+                ImageProp imgProp = new ImageProp();
+                imgProp.RetrieveOriImage = bmpSelectedImg;
+                imgProp.RetrievePreviewImage = previewSelectedImg;
                 Form2 f2 = new Form2();
-                f2.SetImagePreview(bmpSelectedImg.Clone() as Image);
+                f2.SetImagePreview(bmpSelectedImg.Clone() as Image , previewSelectedImg.Clone() as Image);
                 f2.Show();
+                //f2.ShowDialog();
                 this.Hide();
-                //timerLoad.Stop();
+                timerFunction(false);
             }
         }
 
@@ -258,14 +272,25 @@ namespace BankCardPersonalization
                     panelImgGallery.Visible = false;
                     imageLoaded = true;
                     galleryImg = this.imageList1.Images[imgIndex];
-                    bmpSelectedImg = new Bitmap(galleryImg, 1036, 664);
-                    Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
-                    graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
-                    graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
-                    graphicImg.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
-                    selectedImageBox.Image = bmpSelectedImg;
-                    selectedImageBox.SizeMode = PictureBoxSizeMode.Zoom;
+                    imageName = this.imageList1.Images.Keys[imgIndex].ToString();
+                    pathName = "C:\\Users\\Jack\\Pictures\\"  + imageName;
+
+                    StreamReader picStreamReader = new StreamReader(pathName);
+                    bmpSelectedImg = (Bitmap)Bitmap.FromStream(picStreamReader.BaseStream);
+                    picStreamReader.Close();
+
+                    previewSelectedImg = bmpSelectedImg.CopyToSquareCanvas(selectedImageBox.Width);
+                    selectedImageBox.Image = previewSelectedImg;
+                    selectedImageBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                    imageLoaded = true;
+                    //Graphics graphicImg = Graphics.FromImage(bmpSelectedImg);
+                    //graphicImg.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                    //graphicImg.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                    //graphicImg.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+                    //selectedImageBox.Image = bmpSelectedImg;
+                    //selectedImageBox.SizeMode = PictureBoxSizeMode.Zoom;
                     grpSelectedImg.Visible = true;
+
                 }
             
             }

@@ -35,6 +35,8 @@
             this.buttonSelectImg = new System.Windows.Forms.Button();
             this.gBoxStepOne = new System.Windows.Forms.GroupBox();
             this.labelInstructOne = new System.Windows.Forms.Label();
+            this.grpSelectedImg = new System.Windows.Forms.GroupBox();
+            this.selectedImageBox = new System.Windows.Forms.PictureBox();
             this.panelImgGallery = new System.Windows.Forms.Panel();
             this.listViewGallery = new System.Windows.Forms.ListView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -49,14 +51,12 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timerLoad = new System.Windows.Forms.Timer(this.components);
-            this.selectedImageBox = new System.Windows.Forms.PictureBox();
-            this.grpSelectedImg = new System.Windows.Forms.GroupBox();
             this.ImgSelectPanel.SuspendLayout();
             this.gBoxStepOne.SuspendLayout();
+            this.grpSelectedImg.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.selectedImageBox)).BeginInit();
             this.panelImgGallery.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectedImageBox)).BeginInit();
-            this.grpSelectedImg.SuspendLayout();
             this.SuspendLayout();
             // 
             // ImgSelectPanel
@@ -134,6 +134,26 @@
             this.labelInstructOne.TabIndex = 0;
             this.labelInstructOne.Text = "Instruction";
             // 
+            // grpSelectedImg
+            // 
+            this.grpSelectedImg.Controls.Add(this.selectedImageBox);
+            this.grpSelectedImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpSelectedImg.Location = new System.Drawing.Point(421, 269);
+            this.grpSelectedImg.Name = "grpSelectedImg";
+            this.grpSelectedImg.Size = new System.Drawing.Size(663, 447);
+            this.grpSelectedImg.TabIndex = 11;
+            this.grpSelectedImg.TabStop = false;
+            this.grpSelectedImg.Text = "Selected Image :";
+            // 
+            // selectedImageBox
+            // 
+            this.selectedImageBox.Location = new System.Drawing.Point(16, 69);
+            this.selectedImageBox.Name = "selectedImageBox";
+            this.selectedImageBox.Size = new System.Drawing.Size(637, 373);
+            this.selectedImageBox.TabIndex = 2;
+            this.selectedImageBox.TabStop = false;
+            this.selectedImageBox.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxPaint);
+            // 
             // panelImgGallery
             // 
             this.panelImgGallery.Controls.Add(this.listViewGallery);
@@ -158,11 +178,11 @@
             // 
             this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "111.jpg");
-            this.imageList1.Images.SetKeyName(1, "123.jpg");
+            this.imageList1.Images.SetKeyName(0, "airplane.jpg");
+            this.imageList1.Images.SetKeyName(1, "hardrock.jpg");
             this.imageList1.Images.SetKeyName(2, "linux.png");
-            this.imageList1.Images.SetKeyName(3, "asdasdas.jpg");
-            this.imageList1.Images.SetKeyName(4, "adasdsad.jpg");
+            this.imageList1.Images.SetKeyName(3, "maybank.jpg");
+            this.imageList1.Images.SetKeyName(4, "tiger.jpg");
             // 
             // labelImgGallery
             // 
@@ -291,26 +311,6 @@
             this.timerLoad.Interval = 1000;
             this.timerLoad.Tick += new System.EventHandler(this.timerLoad_Tick);
             // 
-            // selectedImageBox
-            // 
-            this.selectedImageBox.Location = new System.Drawing.Point(16, 69);
-            this.selectedImageBox.Name = "selectedImageBox";
-            this.selectedImageBox.Size = new System.Drawing.Size(637, 373);
-            this.selectedImageBox.TabIndex = 2;
-            this.selectedImageBox.TabStop = false;
-            this.selectedImageBox.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBoxPaint);
-            // 
-            // grpSelectedImg
-            // 
-            this.grpSelectedImg.Controls.Add(this.selectedImageBox);
-            this.grpSelectedImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpSelectedImg.Location = new System.Drawing.Point(421, 269);
-            this.grpSelectedImg.Name = "grpSelectedImg";
-            this.grpSelectedImg.Size = new System.Drawing.Size(663, 447);
-            this.grpSelectedImg.TabIndex = 11;
-            this.grpSelectedImg.TabStop = false;
-            this.grpSelectedImg.Text = "Selected Image :";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,12 +326,12 @@
             this.ImgSelectPanel.PerformLayout();
             this.gBoxStepOne.ResumeLayout(false);
             this.gBoxStepOne.PerformLayout();
+            this.grpSelectedImg.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.selectedImageBox)).EndInit();
             this.panelImgGallery.ResumeLayout(false);
             this.panelImgGallery.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selectedImageBox)).EndInit();
-            this.grpSelectedImg.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
