@@ -1,0 +1,9 @@
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\bin\Debug\FuzzyBlurFilter.exe
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\bin\Debug\FuzzyBlurFilter.pdb
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\FuzzyBlurFilter.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\FuzzyBlurFilter.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\FuzzyBlurFilter.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\FuzzyBlurFilter.exe
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\FuzzyBlurFilter.pdb
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\FuzzyBlurFilter\FuzzyBlurFilter\obj\Debug\FuzzyBlurFilter.exe
+C:\Work\Projects\HowToSamples_Repository\ImagePaintStencilFilter\FuzzyBlurFilter\FuzzyBlurFilter\obj\Debug\FuzzyBlurFilter.pdb

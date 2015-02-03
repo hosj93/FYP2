@@ -1,0 +1,5 @@
+C:\Work\Projects\HowToSamples_Repository\Base64Thumbnails\Base64Thumbnails\Base64Thumbnails\bin\Debug\HtmlTemplate.htm
+C:\Work\Projects\HowToSamples_Repository\Base64Thumbnails\Base64Thumbnails\Base64Thumbnails\bin\Debug\Base64Thumbnails.exe
+C:\Work\Projects\HowToSamples_Repository\Base64Thumbnails\Base64Thumbnails\Base64Thumbnails\bin\Debug\Base64Thumbnails.pdb
+C:\Work\Projects\HowToSamples_Repository\Base64Thumbnails\Base64Thumbnails\Base64Thumbnails\obj\x86\Debug\Base64Thumbnails.exe
+C:\Work\Projects\HowToSamples_Repository\Base64Thumbnails\Base64Thumbnails\Base64Thumbnails\obj\x86\Debug\Base64Thumbnails.pdb

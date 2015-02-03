@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\bin\Debug\ImageUnsharpMask.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\bin\Debug\ImageUnsharpMask.exe
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\bin\Debug\ImageUnsharpMask.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\obj\Debug\ImageUnsharpMask.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\obj\Debug\ImageUnsharpMask.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\obj\Debug\ImageUnsharpMask.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\obj\Debug\ImageUnsharpMask.exe
+C:\Work\Projects\HowToSamples_Repository\ImageUnsharpMask\ImageUnsharpMask\ImageUnsharpMask\obj\Debug\ImageUnsharpMask.pdb

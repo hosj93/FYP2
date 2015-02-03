@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\bin\Debug\BooleanEdgeDetection.exe.config
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\bin\Debug\BooleanEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\bin\Debug\BooleanEdgeDetection.pdb
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\BooleanEdgeDetection.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\BooleanEdgeDetection.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\BooleanEdgeDetection.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\BooleanEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\BooleanEdgeDetection\BooleanEdgeDetection\BooleanEdgeDetection\obj\Debug\BooleanEdgeDetection.pdb

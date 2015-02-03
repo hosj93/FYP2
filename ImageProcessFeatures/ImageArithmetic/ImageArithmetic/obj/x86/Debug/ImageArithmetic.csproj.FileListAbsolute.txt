@@ -1,0 +1,14 @@
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\bin\Debug\ImageArithmetic.exe
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\bin\Debug\ImageArithmetic.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\obj\x86\Debug\ImageArithmetic.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\obj\x86\Debug\ImageArithmetic.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\obj\x86\Debug\ImageArithmetic.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\obj\x86\Debug\ImageArithmetic.exe
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\BitwiseBitmapBlending\obj\x86\Debug\ImageArithmetic.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\obj\x86\Debug\ImageArithmetic.exe
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\obj\x86\Debug\ImageArithmetic.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\bin\Debug\ImageArithmetic.exe
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\bin\Debug\ImageArithmetic.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\obj\x86\Debug\ImageArithmetic.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\obj\x86\Debug\ImageArithmetic.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageArithmetic\ImageArithmetic\ImageArithmetic\obj\x86\Debug\ImageArithmetic.csproj.GenerateResource.Cache

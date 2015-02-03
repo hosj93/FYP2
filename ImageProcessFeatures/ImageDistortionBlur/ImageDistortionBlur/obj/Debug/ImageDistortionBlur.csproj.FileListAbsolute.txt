@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\bin\Debug\ImageDistortionBlur.exe
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\bin\Debug\ImageDistortionBlur.pdb
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\obj\Debug\ImageDistortionBlur.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\obj\Debug\ImageDistortionBlur.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\obj\Debug\ImageDistortionBlur.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\obj\Debug\ImageDistortionBlur.exe
+C:\Work\Projects\HowToSamples_Repository\RandomPixelOffsetFilter\ImageDistortionBlur\ImageDistortionBlur\obj\Debug\ImageDistortionBlur.pdb

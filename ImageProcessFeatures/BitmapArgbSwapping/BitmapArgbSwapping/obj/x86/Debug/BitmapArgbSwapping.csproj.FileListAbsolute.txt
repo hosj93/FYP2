@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\bin\Debug\BitmapArgbSwapping.exe.config
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\obj\x86\Debug\BitmapArgbSwapping.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\obj\x86\Debug\BitmapArgbSwapping.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\bin\Debug\BitmapArgbSwapping.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\bin\Debug\BitmapArgbSwapping.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\obj\x86\Debug\BitmapArgbSwapping.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\obj\x86\Debug\BitmapArgbSwapping.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapArgbSwapping\BitmapArgbSwapping\BitmapArgbSwapping\obj\x86\Debug\BitmapArgbSwapping.MainForm.resources

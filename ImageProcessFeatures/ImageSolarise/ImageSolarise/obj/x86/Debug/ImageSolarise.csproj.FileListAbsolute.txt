@@ -1,0 +1,14 @@
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\bin\Debug\ImageSolarise.exe
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\bin\Debug\ImageSolarise.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\obj\x86\Debug\ImageSolarise.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\obj\x86\Debug\ImageSolarise.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\obj\x86\Debug\ImageSolarise.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\obj\x86\Debug\ImageSolarise.exe
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\BitmapShade\obj\x86\Debug\ImageSolarise.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\obj\x86\Debug\ImageSolarise.exe
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\obj\x86\Debug\ImageSolarise.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\bin\Debug\ImageSolarise.exe
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\bin\Debug\ImageSolarise.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\obj\x86\Debug\ImageSolarise.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\obj\x86\Debug\ImageSolarise.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageSolarise\ImageSolarise\ImageSolarise\obj\x86\Debug\ImageSolarise.csproj.GenerateResource.Cache

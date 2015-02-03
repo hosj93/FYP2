@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\bin\Release\ImageBlending.exe
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\bin\Release\ImageBlending.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Release\ImageBlending.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Release\ImageBlending.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Release\ImageBlending.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Release\ImageBlending.exe
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Release\ImageBlending.pdb

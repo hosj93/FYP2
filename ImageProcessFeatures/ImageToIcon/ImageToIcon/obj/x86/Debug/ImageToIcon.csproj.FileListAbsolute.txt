@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\bin\Debug\ImageToIcon.exe
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\bin\Debug\ImageToIcon.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\obj\x86\Debug\ImageToIcon.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\obj\x86\Debug\ImageToIcon.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\obj\x86\Debug\ImageToIcon.exe
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\obj\x86\Debug\ImageToIcon.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageToIcon\ImageToIcon\ImageToIcon\obj\x86\Debug\ImageToIcon.MainForm.resources

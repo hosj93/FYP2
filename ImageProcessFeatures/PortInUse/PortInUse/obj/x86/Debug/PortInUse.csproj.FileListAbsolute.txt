@@ -1,0 +1,5 @@
+C:\Work\Projects\HowToSamples_Repository\PortInUse\PortInUse\PortInUse\bin\Debug\PortInUse.exe
+C:\Work\Projects\HowToSamples_Repository\PortInUse\PortInUse\PortInUse\bin\Debug\PortInUse.pdb
+C:\Work\Projects\HowToSamples_Repository\PortInUse\PortInUse\PortInUse\obj\x86\Debug\PortInUse.exe
+C:\Work\Projects\HowToSamples_Repository\PortInUse\PortInUse\PortInUse\obj\x86\Debug\PortInUse.pdb
+C:\Work\Projects\HowToSamples_Repository\PortInUse\PortInUse\PortInUse\obj\x86\Debug\PortInUse.csprojResolveAssemblyReference.cache

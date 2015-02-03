@@ -1,0 +1,4 @@
+C:\Work\Projects\HowToSamples_Repository\WSDLToWebService\WSDLToWebService\TestProject\bin\TestProject.dll
+C:\Work\Projects\HowToSamples_Repository\WSDLToWebService\WSDLToWebService\TestProject\bin\TestProject.pdb
+C:\Work\Projects\HowToSamples_Repository\WSDLToWebService\WSDLToWebService\TestProject\obj\Debug\TestProject.dll
+C:\Work\Projects\HowToSamples_Repository\WSDLToWebService\WSDLToWebService\TestProject\obj\Debug\TestProject.pdb

@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\bin\Debug\BitmapTint.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\bin\Debug\BitmapTint.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\obj\x86\Debug\BitmapTint.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\obj\x86\Debug\BitmapTint.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\obj\x86\Debug\BitmapTint.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\obj\x86\Debug\BitmapTint.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapTint\BitmapTint\BitmapTint\obj\x86\Debug\BitmapTint.pdb

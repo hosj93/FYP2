@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\bin\Release\ImageASCIIArt.exe
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\bin\Release\ImageASCIIArt.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\obj\Release\ImageASCIIArt.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\obj\Release\ImageASCIIArt.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\obj\Release\ImageASCIIArt.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\obj\Release\ImageASCIIArt.exe
+C:\Work\Projects\HowToSamples_Repository\ImageASCIIArt\ImageASCIIArt\ImageASCIIArt\obj\Release\ImageASCIIArt.pdb

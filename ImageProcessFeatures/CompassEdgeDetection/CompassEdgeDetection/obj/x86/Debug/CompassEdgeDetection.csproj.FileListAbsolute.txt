@@ -1,0 +1,11 @@
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\CompassEdgeDetection.exe.config
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\CompassEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\CompassEdgeDetection.pdb
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\CompassEdgeDetection.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\CompassEdgeDetection.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\CompassEdgeDetection.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\CompassEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\ImageEdgeDetection\ImageEdgeDetection\obj\x86\Debug\CompassEdgeDetection.pdb
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\CompassEdgeDetection\CompassEdgeDetection\bin\Debug\CompassEdgeDetection.exe.config
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\CompassEdgeDetection\CompassEdgeDetection\obj\x86\Debug\CompassEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\CompassEdgeDetection\CompassEdgeDetection\CompassEdgeDetection\obj\x86\Debug\CompassEdgeDetection.pdb

@@ -1,0 +1,7 @@
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\obj\x86\Debug\GdiOpacityDrawing.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\obj\x86\Debug\GdiOpacityDrawing.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\obj\x86\Debug\GdiOpacityDrawing.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\bin\Debug\GdiOpacityDrawing.exe
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\bin\Debug\GdiOpacityDrawing.pdb
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\obj\x86\Debug\GdiOpacityDrawing.exe
+C:\Work\Projects\HowToSamples_Repository\GdiOpacityDrawing\GdiOpacityDrawing\GdiOpacityDrawing\obj\x86\Debug\GdiOpacityDrawing.pdb

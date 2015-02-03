@@ -1,0 +1,17 @@
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.exe
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.exe
+C:\Work\Projects\HowToSamples_Repository\ImageColourAverage\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.exe
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.exe
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageColourAverage.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageColourAverage.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageErosionDilation.exe.config

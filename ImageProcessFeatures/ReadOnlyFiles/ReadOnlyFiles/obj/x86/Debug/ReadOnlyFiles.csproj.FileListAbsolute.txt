@@ -1,0 +1,4 @@
+C:\Work\Projects\HowToSamples_Repository\ReadOnlyFiles\ReadOnlyFiles\ReadOnlyFiles\bin\Debug\ReadOnlyFiles.exe
+C:\Work\Projects\HowToSamples_Repository\ReadOnlyFiles\ReadOnlyFiles\ReadOnlyFiles\bin\Debug\ReadOnlyFiles.pdb
+C:\Work\Projects\HowToSamples_Repository\ReadOnlyFiles\ReadOnlyFiles\ReadOnlyFiles\obj\x86\Debug\ReadOnlyFiles.exe
+C:\Work\Projects\HowToSamples_Repository\ReadOnlyFiles\ReadOnlyFiles\ReadOnlyFiles\obj\x86\Debug\ReadOnlyFiles.pdb

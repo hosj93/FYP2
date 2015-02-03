@@ -1,0 +1,9 @@
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformRotate\ImageTransformRotate\bin\Debug\ImageTransformShear.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\bin\Debug\ImageTransformShear.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\bin\Debug\ImageTransformShear.exe
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\bin\Debug\ImageTransformShear.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\obj\Debug\ImageTransformShear.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\obj\Debug\ImageTransformShear.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\obj\Debug\ImageTransformShear.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\obj\Debug\ImageTransformShear.exe
+C:\Work\Projects\HowToSamples_Repository\ImageTransformShear\ImageTransformShear\ImageTransformShear\obj\Debug\ImageTransformShear.pdb

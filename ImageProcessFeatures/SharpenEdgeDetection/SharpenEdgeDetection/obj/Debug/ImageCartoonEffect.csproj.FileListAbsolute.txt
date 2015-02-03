@@ -1,0 +1,17 @@
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.exe
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.exe
+C:\Work\Projects\HowToSamples_Repository\ImageCartoonEffect\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.pdb
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.exe.config
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.exe
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.pdb
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.exe
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\ImageCartoonEffect.pdb
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\obj\Debug\ImageCartoonEffect.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\ImageCartoonEffect\ImageCartoonEffect\bin\Debug\SharpenEdgeDetection.exe.config

@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\bin\Debug\ImageTransformRotate.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\bin\Debug\ImageTransformRotate.exe
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\bin\Debug\ImageTransformRotate.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\obj\Debug\ImageTransformRotate.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\obj\Debug\ImageTransformRotate.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\obj\Debug\ImageTransformRotate.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\obj\Debug\ImageTransformRotate.exe
+C:\Work\Projects\HowToSamples_Repository\ImageTransformation\ImageTransformRotate\ImageTransformRotate\obj\Debug\ImageTransformRotate.pdb

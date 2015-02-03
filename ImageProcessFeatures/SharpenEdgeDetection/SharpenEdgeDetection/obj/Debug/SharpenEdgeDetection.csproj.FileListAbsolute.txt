@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\bin\Debug\SharpenEdgeDetection.exe.config
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\bin\Debug\SharpenEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\bin\Debug\SharpenEdgeDetection.pdb
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\obj\Debug\SharpenEdgeDetection.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\obj\Debug\SharpenEdgeDetection.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\obj\Debug\SharpenEdgeDetection.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\obj\Debug\SharpenEdgeDetection.exe
+C:\Work\Projects\HowToSamples_Repository\SharpenEdgeDetection\SharpenEdgeDetection\SharpenEdgeDetection\obj\Debug\SharpenEdgeDetection.pdb

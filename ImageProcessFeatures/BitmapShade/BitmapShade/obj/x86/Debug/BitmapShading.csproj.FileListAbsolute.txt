@@ -1,0 +1,14 @@
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\bin\Debug\BitmapShading.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\bin\Debug\BitmapShading.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\BitmapShading.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\BitmapShading.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\BitmapShading.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\BitmapShading.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\BitmapShading.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\obj\x86\Debug\BitmapShading.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\obj\x86\Debug\BitmapShading.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\bin\Debug\BitmapShading.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\bin\Debug\BitmapShading.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\obj\x86\Debug\BitmapShading.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\obj\x86\Debug\BitmapShading.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapShade\BitmapShade\BitmapShade\obj\x86\Debug\BitmapShading.csproj.GenerateResource.Cache

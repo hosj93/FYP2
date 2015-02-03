@@ -1,0 +1,1 @@
+C:\Work\Projects\HowToSamples_Repository\DifferenceOfGaussians\ImageEdgeDetection\ImageEdgeDetection\bin\Debug\DifferenceOfGaussians.exe.config

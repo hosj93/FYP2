@@ -1,0 +1,4 @@
+C:\Work\Projects\HowToSamples_Repository\DriveSpaceAvailable\DriveSpaceAvailable\bin\Debug\DriveSpaceAvailable.exe
+C:\Work\Projects\HowToSamples_Repository\DriveSpaceAvailable\DriveSpaceAvailable\bin\Debug\DriveSpaceAvailable.pdb
+C:\Work\Projects\HowToSamples_Repository\DriveSpaceAvailable\DriveSpaceAvailable\obj\x86\Debug\DriveSpaceAvailable.exe
+C:\Work\Projects\HowToSamples_Repository\DriveSpaceAvailable\DriveSpaceAvailable\obj\x86\Debug\DriveSpaceAvailable.pdb

@@ -1,0 +1,17 @@
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\bin\Debug\ImageBlending.exe
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\bin\Debug\ImageBlending.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.exe
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageBlending\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.MainForm.resources
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.exe
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.pdb
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\bin\Debug\ImageBlending.exe
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\bin\Debug\ImageBlending.pdb
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.csprojResolveAssemblyReference.cache
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.MainForm.resources
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.Properties.Resources.resources
+C:\Users\Jack\Desktop\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.csproj.GenerateResource.Cache
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.exe
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageBlending\ImageBlending\obj\x86\Debug\ImageBlending.pdb

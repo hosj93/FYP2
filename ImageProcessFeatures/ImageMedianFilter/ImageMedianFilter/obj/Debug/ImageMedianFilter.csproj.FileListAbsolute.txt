@@ -1,0 +1,8 @@
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\bin\Debug\DifferenceOfGaussians.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\bin\Debug\DifferenceOfGaussians.exe
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\bin\Debug\DifferenceOfGaussians.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\obj\Debug\DifferenceOfGaussians.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\obj\Debug\DifferenceOfGaussians.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\obj\Debug\ImageMedianFilter.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\obj\Debug\DifferenceOfGaussians.exe
+C:\Work\Projects\HowToSamples_Repository\ImageMedianFilter\ImageMedianFilter\DifferenceOfGaussians\obj\Debug\DifferenceOfGaussians.pdb

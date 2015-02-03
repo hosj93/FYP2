@@ -1,0 +1,4 @@
+C:\Work\Projects\HowToSamples_Repository\NetDataContractDeepCopy\NetDataContractDeepCopy\NetDataContractDeepCopy\bin\Debug\NetDataContractDeepCopy.exe
+C:\Work\Projects\HowToSamples_Repository\NetDataContractDeepCopy\NetDataContractDeepCopy\NetDataContractDeepCopy\bin\Debug\NetDataContractDeepCopy.pdb
+C:\Work\Projects\HowToSamples_Repository\NetDataContractDeepCopy\NetDataContractDeepCopy\NetDataContractDeepCopy\obj\x86\Debug\NetDataContractDeepCopy.exe
+C:\Work\Projects\HowToSamples_Repository\NetDataContractDeepCopy\NetDataContractDeepCopy\NetDataContractDeepCopy\obj\x86\Debug\NetDataContractDeepCopy.pdb

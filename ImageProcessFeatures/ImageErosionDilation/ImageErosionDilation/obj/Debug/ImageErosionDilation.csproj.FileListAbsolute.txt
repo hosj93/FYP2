@@ -1,0 +1,11 @@
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageErosionDilation.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageErosionDilation.exe
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\bin\Debug\ImageErosionDilation.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageErosionDilation.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageErosionDilation.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageErosionDilation.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageErosionDilation.exe
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageColourAverage\ImageColourAverage\obj\Debug\ImageErosionDilation.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageErosionDilation\ImageErosionDilation\bin\Debug\ImageErosionDilation.exe.config
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageErosionDilation\ImageErosionDilation\obj\Debug\ImageErosionDilation.exe
+C:\Work\Projects\HowToSamples_Repository\ImageDilation\ImageErosionDilation\ImageErosionDilation\obj\Debug\ImageErosionDilation.pdb

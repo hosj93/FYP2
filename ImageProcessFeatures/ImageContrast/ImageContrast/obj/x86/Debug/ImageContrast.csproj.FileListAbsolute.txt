@@ -1,0 +1,16 @@
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\bin\Debug\ImageContrast.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\bin\Debug\ImageContrast.pdb
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\ImageContrast.MainForm.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\ImageContrast.Properties.Resources.resources
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\ImageContrast.csproj.GenerateResource.Cache
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\ImageContrast.exe
+C:\Work\Projects\HowToSamples_Repository\BitmapContrast\BiTonalBitmap\BiTonalBitmap\obj\x86\Debug\ImageContrast.pdb
+C:\Work\Projects\HowToSamples_Repository\ImageContrast\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.exe
+C:\Work\Projects\HowToSamples_Repository\ImageContrast\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.pdb
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.exe
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.pdb
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\bin\Debug\ImageContrast.exe
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\bin\Debug\ImageContrast.pdb
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.MainForm.resources
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.Properties.Resources.resources
+C:\Users\Jack\Desktop\ImageProcessFeatures\ImageContrast\ImageContrast\obj\x86\Debug\ImageContrast.csproj.GenerateResource.Cache

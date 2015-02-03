@@ -1,0 +1,9 @@
+C:\Work\Projects\HowToSamples_Repository\Base64Bitmaps\Base64Bitmaps\Base64Bitmaps\bin\Debug\Base64Bitmaps.exe
+C:\Work\Projects\HowToSamples_Repository\Base64Bitmaps\Base64Bitmaps\Base64Bitmaps\bin\Debug\Base64Bitmaps.pdb
+C:\Work\Projects\HowToSamples_Repository\Base64Bitmaps\Base64Bitmaps\Base64Bitmaps\obj\x86\Debug\Base64Bitmaps.exe
+C:\Work\Projects\HowToSamples_Repository\Base64Bitmaps\Base64Bitmaps\Base64Bitmaps\obj\x86\Debug\Base64Bitmaps.pdb
+C:\Work\Projects\HowToSamples_Repository\Base64ToBitmap\Base64Bitmaps\Base64Bitmaps\obj\x86\Debug\Base64Bitmaps.exe
+C:\Work\Projects\HowToSamples_Repository\Base64ToBitmap\Base64Bitmaps\Base64Bitmaps\obj\x86\Debug\Base64Bitmaps.pdb
+C:\Work\Projects\HowToSamples_Repository\Base64ToBitmap\Base64Bitmaps\Base64Bitmaps\bin\Debug\Base64Bitmaps.exe
+C:\Work\Projects\HowToSamples_Repository\Base64ToBitmap\Base64Bitmaps\Base64Bitmaps\bin\Debug\Base64Bitmaps.pdb
+C:\Work\Projects\HowToSamples_Repository\Base64ToBitmap\Base64Bitmaps\Base64Bitmaps\obj\x86\Debug\Base64Bitmaps.csprojResolveAssemblyReference.cache
