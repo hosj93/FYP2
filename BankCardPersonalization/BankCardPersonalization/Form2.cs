@@ -15,9 +15,22 @@ namespace BankCardPersonalization
     public partial class Form2 : Form
     {
         Form1 f1 = new Form1();
+
         public static Bitmap image;
         public Image prvImage;
         public Image origImage;
+
+        public Bitmap selectedSource = null;
+        public Bitmap bitmapResult = null;
+        public Bitmap oriImageEffect = null;
+        public Bitmap tempImageEffect = null;
+        public Bitmap oriBrightnessEffect = null;
+        public Bitmap tempBrightnessEffect = null;
+
+        public bool cartoonEffectChecker = false;
+        public bool imageEffect;
+        public bool brightnessEffect;
+
         public Form2()
         {
             InitializeComponent();
@@ -26,11 +39,7 @@ namespace BankCardPersonalization
             ImgGradientPrompt();
             cmbCarEffectImplement();
         }
-       // private void refreshImage()
-        //{
-         //   ApplyImageFilter(true, oriImage, previewImage);
-       // }
-
+     
         public void cmbCarEffectImplement()
         {
             cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Default);
@@ -53,12 +62,10 @@ namespace BankCardPersonalization
    
         public void SetImagePreview(Image oriImage, Image previewImg)
         {
-            //ImageProp imgProp = new ImageProp();
             previewImgBox.Image = previewImg;
             prvImage = previewImg;
             origImage = oriImage;
             previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            ApplyImageFilter(true, prvImage, origImage);
         }
 
         private void ApplyImageFilter(bool preview, Image prvImage, Image origImage)
@@ -67,9 +74,6 @@ namespace BankCardPersonalization
             {
                 return;
             }
-
-            Bitmap selectedSource = null;
-            Bitmap bitmapResult = null;
 
             if (preview == true)
             {
@@ -84,6 +88,7 @@ namespace BankCardPersonalization
             {
                 if ((CartoonEffect.SmoothingFilterType)cmbCartoonEffect.SelectedItem == CartoonEffect.SmoothingFilterType.Default)
                 {
+                    imageEffect = false;
                     bitmapResult = new Bitmap(origImage);
                 }
                 else
@@ -102,6 +107,7 @@ namespace BankCardPersonalization
                 if (preview == true)
                 {
                     previewImgBox.Image = bitmapResult;
+                    cartoonEffectChecker = true;   
                 }
                 else
                 {
@@ -109,6 +115,7 @@ namespace BankCardPersonalization
                 }
             }
         }
+
         private void ImgGradientPrompt()
         {
             //label1.Visible = false;
@@ -116,11 +123,11 @@ namespace BankCardPersonalization
             string[] extensions = new[] { ".jpg", ".png", ".bmp", ".jpeg" };
             string[] directory = Directory.GetFiles(@"C:\Users\Jack\Pictures\imgGradient", "*.*")
                 .Where(f => extensions.Contains(System.IO.Path.GetExtension(f).ToLower())).ToArray();
-            this.listViewImgGradient.Items.Clear();
+            this.listViewImgEffect.Items.Clear();
            
             foreach (string dir in directory)
             {
-                listViewImgGradient.Items.Add(Path.GetFileNameWithoutExtension(dir), i);
+                listViewImgEffect.Items.Add(Path.GetFileNameWithoutExtension(dir), i);
                 i++;
                 if (i == imgGradient.Images.Count)
                     i = 0;
@@ -140,7 +147,17 @@ namespace BankCardPersonalization
 
         private void FilterLevelChanged(object sender, EventArgs e)
         {
-            ApplyImageFilter(true, prvImage, origImage);
+            if (imageEffect == true)
+            {
+                prvImage = oriImageEffect;
+                ApplyImageFilter(true, prvImage, origImage);
+            }
+            else
+            {
+                prvImage = origImage;
+                ApplyImageFilter(true, prvImage, origImage);
+            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -148,7 +165,169 @@ namespace BankCardPersonalization
             MessageBox.Show("muahaha");
         }
 
-       
+        private void listViewImgEffect_Click(object sender, EventArgs e)
+        {
+            int imgEffectIndex;
+            foreach(ListViewItem imgGradient in listViewImgEffect.SelectedItems)
+            {
+                imgEffectIndex = imgGradient.ImageIndex;
+                if (imgEffectIndex >= 0 && imgEffectIndex < this.imgGradient.Images.Count)
+                {
+                    switch (imgEffectIndex)
+                    {
+                        case 0:
+                            {
+                                ApplyGrayScale();
+                            }break;
+                        case 1:
+                            {
+                                ApplyInvertEffect();
+                            }break;
+                        case 2:
+                            {
+                                //Implementing 
+                            }break;
+                    }
+                }
+                
+            }
+        }
+
+        private void BrightnessLabel()
+        {
+            StringBuilder ImgBrightnessText = new StringBuilder();
+            ImgBrightnessText.AppendLine("Adjust the brightness of your Image ");
+            lblImgBrightness.Text = ImgBrightnessText.ToString();
+        }
+
+        private void ApplyInvertEffect()
+        {
+            if (cartoonEffectChecker == true)
+            {
+                oriImageEffect = new Bitmap(bitmapResult);
+                tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+            else
+            {
+                oriImageEffect = new Bitmap(prvImage);
+                tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+
+            Color c;
+            for (int i = 0; i < tempImageEffect.Width; i++)
+            {
+                for (int j = 0; j < tempImageEffect.Height; j++)
+                {
+                    c = tempImageEffect.GetPixel(i, j);
+                    tempImageEffect.SetPixel(i, j,
+                    Color.FromArgb(255 - c.R, 255 - c.G, 255 - c.B));
+                }           
+            }
+            oriImageEffect = (Bitmap)tempImageEffect.Clone();
+            previewImgBox.Image = oriImageEffect;
+            previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            imageEffect = true;
+            GrabLatestImage(imageEffect);
+        }
+
+        private void ApplyGrayScale()
+        {
+            if (cartoonEffectChecker == true)
+            {
+                 oriImageEffect = new Bitmap(bitmapResult);
+                 tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+            else
+            {
+                oriImageEffect = new Bitmap(origImage);
+                tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+            
+            Color c;
+            for (int i = 0; i < tempImageEffect.Width; i++)
+            {
+                for (int j = 0; j < tempImageEffect.Height; j++)
+                {
+                    c = tempImageEffect.GetPixel(i, j);
+                    byte gray = (byte)(.299 * c.R + .587 * c.G + .114 * c.B);
+                    tempImageEffect.SetPixel(i, j, Color.FromArgb(gray, gray, gray));
+                }
+            }
+            oriImageEffect = (Bitmap)tempImageEffect.Clone();
+            previewImgBox.Image = oriImageEffect;
+            previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            imageEffect = true;
+            GrabLatestImage(imageEffect);
+        }
+
+        private void GrabLatestImage(bool imageEffect)
+        {
+            if (imageEffect == true)
+            {
+                oriBrightnessEffect = oriImageEffect;
+            }
+        }
+
+        private void tabBrightness_Click(object sender, EventArgs e)
+        {
+            BrightnessLabel();
+        }
+
+        private void trcBrightness_Scroll(object sender, EventArgs e)
+        {
+            int brightnessVal = trcBrightness.Value;
+            if (imageEffect == true)
+            {
+                oriImageEffect = new Bitmap(oriBrightnessEffect);
+                tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+            else
+            {
+                oriImageEffect = new Bitmap(prvImage);
+                tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            }
+            if (brightnessVal < -255) brightnessVal = -255;
+            if (brightnessVal > 255) brightnessVal = 255;
+            Color c;
+            for (int i = 0; i < tempImageEffect.Width; i++)
+            {
+                for (int j = 0; j < tempImageEffect.Height; j++)
+                {
+                    c = tempImageEffect.GetPixel(i, j);
+                    int cR = c.R + brightnessVal;
+                    int cG = c.G + brightnessVal;
+                    int cB = c.B + brightnessVal;
+
+                    if (cR < 0) cR = 1;
+                    if (cR > 255) cR = 255;
+
+                    if (cG < 0) cG = 1;
+                    if (cG > 255) cG = 255;
+
+                    if (cB < 0) cB = 1;
+                    if (cB > 255) cB = 255;
+
+                    tempImageEffect.SetPixel(i, j,
+                    Color.FromArgb((byte)cR, (byte)cG, (byte)cB));
+                }
+            }
+            if (brightnessVal < 100)
+            {
+                lblBrightnessValue.ForeColor = System.Drawing.Color.Green;
+            }
+            else if (brightnessVal > 100 && brightnessVal < 180)
+            {
+                lblBrightnessValue.ForeColor = System.Drawing.Color.Blue;
+            }
+            else
+                lblBrightnessValue.ForeColor = System.Drawing.Color.Red;
+
+            lblBrightnessValue.Text = brightnessVal.ToString();
+            oriImageEffect = (Bitmap)tempImageEffect.Clone();
+            previewImgBox.Image = oriImageEffect;
+            previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            imageEffect = true;
+        }  
     }
 }
 

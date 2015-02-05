@@ -94,7 +94,7 @@ namespace BankCardPersonalization
             if (imageLoaded == false)
             {
                 g.DrawString("Your Image Will Be Display Here",
-                new Font("Arial", 10), System.Drawing.Brushes.Blue, new Point(150, 150));
+                new Font("Arial", 10), System.Drawing.Brushes.Blue, new Point(150,120));
             }
         }
 
@@ -248,9 +248,6 @@ namespace BankCardPersonalization
 
             if (imgConfirmation == DialogResult.Yes)
             {
-                ImageProp imgProp = new ImageProp();
-                imgProp.RetrieveOriImage = bmpSelectedImg;
-                imgProp.RetrievePreviewImage = previewSelectedImg;
                 Form2 f2 = new Form2();
                 f2.SetImagePreview(bmpSelectedImg.Clone() as Image , previewSelectedImg.Clone() as Image);
                 f2.Show();

@@ -34,20 +34,27 @@
             this.lblInstructTwo = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.previewImgBox = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabImageProcess = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.listViewImgGradient = new System.Windows.Forms.ListView();
+            this.listViewImgEffect = new System.Windows.Forms.ListView();
             this.imgGradient = new System.Windows.Forms.ImageList(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblImgBrightness = new System.Windows.Forms.Label();
+            this.trcBrightness = new System.Windows.Forms.TrackBar();
+            this.imageIconTab = new System.Windows.Forms.ImageList(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbCartoonEffect = new System.Windows.Forms.ComboBox();
             this.lblCartoonEffect = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblBrightnessTag = new System.Windows.Forms.Label();
+            this.lblBrightnessValue = new System.Windows.Forms.Label();
             this.gBoxStepTwo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previewImgBox)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.tabImageProcess.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,61 +98,92 @@
             this.previewImgBox.TabIndex = 0;
             this.previewImgBox.TabStop = false;
             // 
-            // tabControl1
+            // tabImageProcess
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(275, 556);
-            this.tabControl1.Multiline = true;
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(611, 155);
-            this.tabControl1.TabIndex = 2;
+            this.tabImageProcess.Controls.Add(this.tabPage1);
+            this.tabImageProcess.Controls.Add(this.tabPage2);
+            this.tabImageProcess.ImageList = this.imageIconTab;
+            this.tabImageProcess.Location = new System.Drawing.Point(275, 556);
+            this.tabImageProcess.Multiline = true;
+            this.tabImageProcess.Name = "tabImageProcess";
+            this.tabImageProcess.SelectedIndex = 0;
+            this.tabImageProcess.Size = new System.Drawing.Size(611, 155);
+            this.tabImageProcess.TabIndex = 2;
+            this.tabImageProcess.Click += new System.EventHandler(this.tabBrightness_Click);
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.listViewImgGradient);
+            this.tabPage1.Controls.Add(this.listViewImgEffect);
+            this.tabPage1.ImageIndex = 0;
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(603, 126);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Image Effect";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // listViewImgGradient
+            // listViewImgEffect
             // 
-            this.listViewImgGradient.Alignment = System.Windows.Forms.ListViewAlignment.Left;
-            this.listViewImgGradient.FullRowSelect = true;
-            this.listViewImgGradient.LargeImageList = this.imgGradient;
-            this.listViewImgGradient.Location = new System.Drawing.Point(0, 0);
-            this.listViewImgGradient.Name = "listViewImgGradient";
-            this.listViewImgGradient.Size = new System.Drawing.Size(603, 120);
-            this.listViewImgGradient.TabIndex = 0;
-            this.listViewImgGradient.UseCompatibleStateImageBehavior = false;
+            this.listViewImgEffect.Alignment = System.Windows.Forms.ListViewAlignment.Left;
+            this.listViewImgEffect.FullRowSelect = true;
+            this.listViewImgEffect.LargeImageList = this.imgGradient;
+            this.listViewImgEffect.Location = new System.Drawing.Point(0, 0);
+            this.listViewImgEffect.Name = "listViewImgEffect";
+            this.listViewImgEffect.Size = new System.Drawing.Size(603, 120);
+            this.listViewImgEffect.TabIndex = 0;
+            this.listViewImgEffect.UseCompatibleStateImageBehavior = false;
+            this.listViewImgEffect.Click += new System.EventHandler(this.listViewImgEffect_Click);
             // 
             // imgGradient
             // 
             this.imgGradient.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgGradient.ImageStream")));
             this.imgGradient.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgGradient.Images.SetKeyName(0, "asdasdsad.png");
-            this.imgGradient.Images.SetKeyName(1, "dido.png");
-            this.imgGradient.Images.SetKeyName(2, "diu.png");
-            this.imgGradient.Images.SetKeyName(3, "grayscale.jpg");
-            this.imgGradient.Images.SetKeyName(4, "imgGradient.jpg");
-            this.imgGradient.Images.SetKeyName(5, "loll.png");
-            this.imgGradient.Images.SetKeyName(6, "qwewqeq.png");
-            this.imgGradient.Images.SetKeyName(7, "qwqeqwe.png");
+            this.imgGradient.Images.SetKeyName(0, "GrayScale.png");
+            this.imgGradient.Images.SetKeyName(1, "Inverse.png");
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lblBrightnessValue);
+            this.tabPage2.Controls.Add(this.lblBrightnessTag);
+            this.tabPage2.Controls.Add(this.lblImgBrightness);
+            this.tabPage2.Controls.Add(this.trcBrightness);
+            this.tabPage2.ImageIndex = 1;
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(603, 126);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Brightness";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblImgBrightness
+            // 
+            this.lblImgBrightness.AutoSize = true;
+            this.lblImgBrightness.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImgBrightness.Location = new System.Drawing.Point(160, 3);
+            this.lblImgBrightness.Name = "lblImgBrightness";
+            this.lblImgBrightness.Size = new System.Drawing.Size(144, 23);
+            this.lblImgBrightness.TabIndex = 1;
+            this.lblImgBrightness.Text = "lblImgBrightness";
+            this.lblImgBrightness.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // trcBrightness
+            // 
+            this.trcBrightness.Location = new System.Drawing.Point(3, 29);
+            this.trcBrightness.Maximum = 255;
+            this.trcBrightness.Name = "trcBrightness";
+            this.trcBrightness.Size = new System.Drawing.Size(594, 56);
+            this.trcBrightness.TabIndex = 27;
+            this.trcBrightness.TickFrequency = 10;
+            this.trcBrightness.Scroll += new System.EventHandler(this.trcBrightness_Scroll);
+            // 
+            // imageIconTab
+            // 
+            this.imageIconTab.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageIconTab.ImageStream")));
+            this.imageIconTab.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageIconTab.Images.SetKeyName(0, "effect.png");
+            this.imageIconTab.Images.SetKeyName(1, "Brightness.png");
             // 
             // panel1
             // 
@@ -189,6 +227,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // lblBrightnessTag
+            // 
+            this.lblBrightnessTag.AutoSize = true;
+            this.lblBrightnessTag.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrightnessTag.Location = new System.Drawing.Point(385, 88);
+            this.lblBrightnessTag.Name = "lblBrightnessTag";
+            this.lblBrightnessTag.Size = new System.Drawing.Size(152, 23);
+            this.lblBrightnessTag.TabIndex = 28;
+            this.lblBrightnessTag.Text = "Brightness Value :";
+            // 
+            // lblBrightnessValue
+            // 
+            this.lblBrightnessValue.AutoSize = true;
+            this.lblBrightnessValue.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrightnessValue.ForeColor = System.Drawing.Color.Green;
+            this.lblBrightnessValue.Location = new System.Drawing.Point(543, 88);
+            this.lblBrightnessValue.Name = "lblBrightnessValue";
+            this.lblBrightnessValue.Size = new System.Drawing.Size(20, 23);
+            this.lblBrightnessValue.TabIndex = 29;
+            this.lblBrightnessValue.Text = "0";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -196,7 +255,7 @@
             this.ClientSize = new System.Drawing.Size(1319, 723);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabImageProcess);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gBoxStepTwo);
             this.Name = "Form2";
@@ -206,8 +265,11 @@
             this.gBoxStepTwo.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.previewImgBox)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            this.tabImageProcess.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -220,15 +282,20 @@
         private System.Windows.Forms.Label lblInstructTwo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox previewImgBox;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabImageProcess;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.ListView listViewImgGradient;
+        private System.Windows.Forms.ListView listViewImgEffect;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ImageList imgGradient;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblCartoonEffect;
         private System.Windows.Forms.ComboBox cmbCartoonEffect;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ImageList imageIconTab;
+        private System.Windows.Forms.Label lblImgBrightness;
+        private System.Windows.Forms.TrackBar trcBrightness;
+        private System.Windows.Forms.Label lblBrightnessTag;
+        private System.Windows.Forms.Label lblBrightnessValue;
 
     }
 }
