@@ -39,6 +39,8 @@
             this.listViewImgEffect = new System.Windows.Forms.ListView();
             this.imgGradient = new System.Windows.Forms.ImageList(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblBrightnessValue = new System.Windows.Forms.Label();
+            this.lblBrightnessTag = new System.Windows.Forms.Label();
             this.lblImgBrightness = new System.Windows.Forms.Label();
             this.trcBrightness = new System.Windows.Forms.TrackBar();
             this.imageIconTab = new System.Windows.Forms.ImageList(this.components);
@@ -46,8 +48,9 @@
             this.cmbCartoonEffect = new System.Windows.Forms.ComboBox();
             this.lblCartoonEffect = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.lblBrightnessTag = new System.Windows.Forms.Label();
-            this.lblBrightnessValue = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.cmbColorSwapping = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.gBoxStepTwo.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.previewImgBox)).BeginInit();
@@ -56,6 +59,7 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gBoxStepTwo
@@ -131,6 +135,7 @@
             this.listViewImgEffect.Location = new System.Drawing.Point(0, 0);
             this.listViewImgEffect.Name = "listViewImgEffect";
             this.listViewImgEffect.Size = new System.Drawing.Size(603, 120);
+            this.listViewImgEffect.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.listViewImgEffect.TabIndex = 0;
             this.listViewImgEffect.UseCompatibleStateImageBehavior = false;
             this.listViewImgEffect.Click += new System.EventHandler(this.listViewImgEffect_Click);
@@ -139,8 +144,9 @@
             // 
             this.imgGradient.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgGradient.ImageStream")));
             this.imgGradient.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgGradient.Images.SetKeyName(0, "GrayScale.png");
-            this.imgGradient.Images.SetKeyName(1, "Inverse.png");
+            this.imgGradient.Images.SetKeyName(0, "Flipping.png");
+            this.imgGradient.Images.SetKeyName(1, "GrayScale.png");
+            this.imgGradient.Images.SetKeyName(2, "Inverse.png");
             // 
             // tabPage2
             // 
@@ -156,6 +162,27 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Brightness";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lblBrightnessValue
+            // 
+            this.lblBrightnessValue.AutoSize = true;
+            this.lblBrightnessValue.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrightnessValue.ForeColor = System.Drawing.Color.Green;
+            this.lblBrightnessValue.Location = new System.Drawing.Point(543, 88);
+            this.lblBrightnessValue.Name = "lblBrightnessValue";
+            this.lblBrightnessValue.Size = new System.Drawing.Size(20, 23);
+            this.lblBrightnessValue.TabIndex = 29;
+            this.lblBrightnessValue.Text = "0";
+            // 
+            // lblBrightnessTag
+            // 
+            this.lblBrightnessTag.AutoSize = true;
+            this.lblBrightnessTag.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBrightnessTag.Location = new System.Drawing.Point(385, 88);
+            this.lblBrightnessTag.Name = "lblBrightnessTag";
+            this.lblBrightnessTag.Size = new System.Drawing.Size(152, 23);
+            this.lblBrightnessTag.TabIndex = 28;
+            this.lblBrightnessTag.Text = "Brightness Value :";
             // 
             // lblImgBrightness
             // 
@@ -189,7 +216,7 @@
             // 
             this.panel1.Controls.Add(this.cmbCartoonEffect);
             this.panel1.Controls.Add(this.lblCartoonEffect);
-            this.panel1.Location = new System.Drawing.Point(926, 195);
+            this.panel1.Location = new System.Drawing.Point(926, 35);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(287, 74);
             this.panel1.TabIndex = 3;
@@ -210,7 +237,7 @@
             // 
             this.lblCartoonEffect.AutoSize = true;
             this.lblCartoonEffect.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCartoonEffect.Location = new System.Drawing.Point(3, 13);
+            this.lblCartoonEffect.Location = new System.Drawing.Point(4, 14);
             this.lblCartoonEffect.Name = "lblCartoonEffect";
             this.lblCartoonEffect.Size = new System.Drawing.Size(261, 24);
             this.lblCartoonEffect.TabIndex = 0;
@@ -227,32 +254,42 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblBrightnessTag
+            // panel2
             // 
-            this.lblBrightnessTag.AutoSize = true;
-            this.lblBrightnessTag.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrightnessTag.Location = new System.Drawing.Point(385, 88);
-            this.lblBrightnessTag.Name = "lblBrightnessTag";
-            this.lblBrightnessTag.Size = new System.Drawing.Size(152, 23);
-            this.lblBrightnessTag.TabIndex = 28;
-            this.lblBrightnessTag.Text = "Brightness Value :";
+            this.panel2.Controls.Add(this.cmbColorSwapping);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(926, 139);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(287, 74);
+            this.panel2.TabIndex = 5;
             // 
-            // lblBrightnessValue
+            // cmbColorSwapping
             // 
-            this.lblBrightnessValue.AutoSize = true;
-            this.lblBrightnessValue.Font = new System.Drawing.Font("Calibri", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrightnessValue.ForeColor = System.Drawing.Color.Green;
-            this.lblBrightnessValue.Location = new System.Drawing.Point(543, 88);
-            this.lblBrightnessValue.Name = "lblBrightnessValue";
-            this.lblBrightnessValue.Size = new System.Drawing.Size(20, 23);
-            this.lblBrightnessValue.TabIndex = 29;
-            this.lblBrightnessValue.Text = "0";
+            this.cmbColorSwapping.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cmbColorSwapping.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbColorSwapping.FormattingEnabled = true;
+            this.cmbColorSwapping.Location = new System.Drawing.Point(12, 32);
+            this.cmbColorSwapping.Name = "cmbColorSwapping";
+            this.cmbColorSwapping.Size = new System.Drawing.Size(266, 24);
+            this.cmbColorSwapping.TabIndex = 1;
+            this.cmbColorSwapping.SelectedIndexChanged += new System.EventHandler(this.ColorEffectChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(8, 4);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Color Swapping";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1319, 723);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tabImageProcess);
@@ -272,6 +309,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.trcBrightness)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -296,6 +335,9 @@
         private System.Windows.Forms.TrackBar trcBrightness;
         private System.Windows.Forms.Label lblBrightnessTag;
         private System.Windows.Forms.Label lblBrightnessValue;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ComboBox cmbColorSwapping;
+        private System.Windows.Forms.Label label1;
 
     }
 }

@@ -5,6 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
+using System.IO;
 using System.Drawing.Drawing2D;
 
 namespace BankCardPersonalization
@@ -44,7 +45,7 @@ namespace BankCardPersonalization
         public static Bitmap GradientBasedEdgeDetectionFilter(
                                         this Bitmap sourceBitmap,
                                         EdgeFilterType filterType,
-                                        DerivativeLevel derivativeLevel, 
+                                        DerivativeLevel derivativeLevel,
                                         float redFactor = 1.0f,
                                         float greenFactor = 1.0f,
                                         float blueFactor = 1.0f,
@@ -82,49 +83,49 @@ namespace BankCardPersonalization
                     byteOffset = offsetY * sourceData.Stride +
                                  offsetX * 4;
 
-                    blueGradient = 
+                    blueGradient =
                     Math.Abs(pixelBuffer[byteOffset - 4] -
                     pixelBuffer[byteOffset + 4]) / derivative;
 
-                    blueGradient += 
-                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
-                    pixelBuffer[byteOffset + sourceData.Stride]) / derivative;
-                    
-                    byteOffset++;
-
-                    greenGradient = 
-                    Math.Abs(pixelBuffer[byteOffset - 4] - 
-                    pixelBuffer[byteOffset + 4]) / derivative;
-
-                    greenGradient += 
-                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
+                    blueGradient +=
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
                     pixelBuffer[byteOffset + sourceData.Stride]) / derivative;
 
                     byteOffset++;
 
-                    redGradient = 
-                    Math.Abs(pixelBuffer[byteOffset - 4] - 
+                    greenGradient =
+                    Math.Abs(pixelBuffer[byteOffset - 4] -
                     pixelBuffer[byteOffset + 4]) / derivative;
 
-                    redGradient += 
-                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
+                    greenGradient +=
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
                     pixelBuffer[byteOffset + sourceData.Stride]) / derivative;
-                    
+
+                    byteOffset++;
+
+                    redGradient =
+                    Math.Abs(pixelBuffer[byteOffset - 4] -
+                    pixelBuffer[byteOffset + 4]) / derivative;
+
+                    redGradient +=
+                    Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
+                    pixelBuffer[byteOffset + sourceData.Stride]) / derivative;
+
                     if (blueGradient + greenGradient + redGradient > threshold)
                     { exceedsThreshold = true; }
                     else
                     {
                         byteOffset -= 2;
 
-                        blueGradient = Math.Abs(pixelBuffer[byteOffset - 4] - 
+                        blueGradient = Math.Abs(pixelBuffer[byteOffset - 4] -
                                                 pixelBuffer[byteOffset + 4]);
                         byteOffset++;
 
-                        greenGradient = Math.Abs(pixelBuffer[byteOffset - 4] - 
+                        greenGradient = Math.Abs(pixelBuffer[byteOffset - 4] -
                                                  pixelBuffer[byteOffset + 4]);
                         byteOffset++;
 
-                        redGradient = Math.Abs(pixelBuffer[byteOffset - 4] - 
+                        redGradient = Math.Abs(pixelBuffer[byteOffset - 4] -
                                                pixelBuffer[byteOffset + 4]);
 
                         if (blueGradient + greenGradient + redGradient > threshold)
@@ -133,55 +134,55 @@ namespace BankCardPersonalization
                         {
                             byteOffset -= 2;
 
-                            blueGradient = 
-                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
+                            blueGradient =
+                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
                             pixelBuffer[byteOffset + sourceData.Stride]);
 
                             byteOffset++;
 
-                            greenGradient = 
-                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
+                            greenGradient =
+                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
                             pixelBuffer[byteOffset + sourceData.Stride]);
 
                             byteOffset++;
 
-                            redGradient = 
-                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] - 
+                            redGradient =
+                            Math.Abs(pixelBuffer[byteOffset - sourceData.Stride] -
                             pixelBuffer[byteOffset + sourceData.Stride]);
 
-                            if (blueGradient + greenGradient + 
+                            if (blueGradient + greenGradient +
                                       redGradient > threshold)
                             { exceedsThreshold = true; }
                             else
                             {
                                 byteOffset -= 2;
 
-                                blueGradient = 
-                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] - 
+                                blueGradient =
+                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -
                                 pixelBuffer[byteOffset + 4 + sourceData.Stride]) / derivative;
 
-                                blueGradient += 
-                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] - 
+                                blueGradient +=
+                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] -
                                 pixelBuffer[byteOffset + sourceData.Stride - 4]) / derivative;
 
                                 byteOffset++;
 
-                                greenGradient = 
-                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] - 
+                                greenGradient =
+                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -
                                 pixelBuffer[byteOffset + 4 + sourceData.Stride]) / derivative;
 
-                                greenGradient += 
-                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] - 
+                                greenGradient +=
+                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] -
                                 pixelBuffer[byteOffset + sourceData.Stride - 4]) / derivative;
 
                                 byteOffset++;
 
-                                redGradient = 
-                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] - 
+                                redGradient =
+                                Math.Abs(pixelBuffer[byteOffset - 4 - sourceData.Stride] -
                                 pixelBuffer[byteOffset + 4 + sourceData.Stride]) / derivative;
 
                                 redGradient +=
-                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] - 
+                                Math.Abs(pixelBuffer[byteOffset - sourceData.Stride + 4] -
                                 pixelBuffer[byteOffset + sourceData.Stride - 4]) / derivative;
 
                                 if (blueGradient + greenGradient + redGradient > threshold)
@@ -221,12 +222,12 @@ namespace BankCardPersonalization
                     }
                     else
                     {
-                        if (filterType == EdgeFilterType.EdgeDetectMono || 
+                        if (filterType == EdgeFilterType.EdgeDetectMono ||
                             filterType == EdgeFilterType.EdgeDetectGradient)
                         {
                             blue = green = red = 0;
                         }
-                        else if (filterType == EdgeFilterType.Sharpen || 
+                        else if (filterType == EdgeFilterType.Sharpen ||
                                  filterType == EdgeFilterType.SharpenGradient)
                         {
                             blue = pixelBuffer[byteOffset];
@@ -245,12 +246,12 @@ namespace BankCardPersonalization
 
                     red = (red > 255 ? 255 :
                           (red < 0 ? 0 :
-                           red)); 
+                           red));
 
                     resultBuffer[byteOffset] = (byte)blue;
                     resultBuffer[byteOffset + 1] = (byte)green;
                     resultBuffer[byteOffset + 2] = (byte)red;
-                    resultBuffer[byteOffset + 3] = 255;  
+                    resultBuffer[byteOffset + 3] = 255;
                 }
             }
 
@@ -270,20 +271,279 @@ namespace BankCardPersonalization
 
             return resultBitmap;
         }
-
-        public enum EdgeFilterType
+        public static Bitmap FlipPixels(this Bitmap sourceImage)
         {
-            None,
-            EdgeDetectMono,
-            EdgeDetectGradient,
-            Sharpen,
-            SharpenGradient,
+            List<ArgbPixel> pixelList = GetPixelListFromBitmap(sourceImage);
+
+            pixelList.Reverse();
+
+            Bitmap resultBitmap = GetBitmapFromPixelList(pixelList,
+                                sourceImage.Width, sourceImage.Height);
+
+            return resultBitmap;
         }
 
-        public enum DerivativeLevel
+        private static Bitmap GetBitmapFromPixelList(List<ArgbPixel> pixelList, int width, int height)
         {
-            First = 1,
-            Second = 2
+            Bitmap resultBitmap = new Bitmap(width, height, PixelFormat.Format32bppArgb);
+
+            BitmapData resultData = resultBitmap.LockBits(new Rectangle(0, 0,
+                        resultBitmap.Width, resultBitmap.Height),
+                        ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+
+            byte[] resultBuffer = new byte[resultData.Stride * resultData.Height];
+
+            using (MemoryStream memoryStream = new MemoryStream(resultBuffer))
+            {
+                memoryStream.Position = 0;
+                BinaryWriter binaryWriter = new BinaryWriter(memoryStream);
+
+                foreach (ArgbPixel pixel in pixelList)
+                {
+                    binaryWriter.Write(pixel.GetColorBytes());
+                }
+
+                binaryWriter.Close();
+            }
+
+            Marshal.Copy(resultBuffer, 0, resultData.Scan0, resultBuffer.Length);
+            resultBitmap.UnlockBits(resultData);
+
+            return resultBitmap;
         }
-    }  
+        private static List<ArgbPixel> GetPixelListFromBitmap(Bitmap sourceImage)
+        {
+            BitmapData sourceData = sourceImage.LockBits(new Rectangle(0, 0,
+                        sourceImage.Width, sourceImage.Height),
+                        ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+
+            byte[] sourceBuffer = new byte[sourceData.Stride * sourceData.Height];
+            Marshal.Copy(sourceData.Scan0, sourceBuffer, 0, sourceBuffer.Length);
+            sourceImage.UnlockBits(sourceData);
+
+            List<ArgbPixel> pixelList = new List<ArgbPixel>(sourceBuffer.Length / 4);
+
+            int x = 0;
+            int y = 0;
+
+            using (MemoryStream memoryStream = new MemoryStream(sourceBuffer))
+            {
+                memoryStream.Position = 0;
+                BinaryReader binaryReader = new BinaryReader(memoryStream);
+
+                while (memoryStream.Position + 4 <= memoryStream.Length)
+                {
+                    ArgbPixel pixel = new ArgbPixel(binaryReader.ReadBytes(4), x, y);
+                    pixelList.Add(pixel);
+
+                    x += 1;
+
+                    if (x >= sourceData.Width)
+                    {
+                        x = 0;
+                        y += 1;
+                    }
+                }
+
+                binaryReader.Close();
+            }
+
+            return pixelList;
+        }
+        public class ArgbPixel
+        {
+            public int pixelX = 0;
+            public int pixelY = 0;
+
+            public byte blue = 0;
+            public byte green = 0;
+            public byte red = 0;
+            public byte alpha = 0;
+
+            public ArgbPixel()
+            {
+
+            }
+
+            public ArgbPixel(byte[] colorComponents)
+            {
+                blue = colorComponents[0];
+                green = colorComponents[1];
+                red = colorComponents[2];
+                alpha = colorComponents[3];
+            }
+
+            public ArgbPixel(byte[] colorComponents, int x, int y)
+            {
+                blue = colorComponents[0];
+                green = colorComponents[1];
+                red = colorComponents[2];
+                alpha = colorComponents[3];
+
+                pixelX = x;
+                pixelY = y;
+            }
+
+            public byte[] GetColorBytes()
+            {
+                return new byte[] { blue, green, red, alpha };
+            }
+
+            public byte this[int index]
+            {
+                get
+                {
+                    switch (index)
+                    {
+                        case 0: return blue;
+                        case 1: return green;
+                        case 2: return red;
+                        case 3: return alpha;
+                        default: return 0;
+                    }
+                }
+            }
+        }
+        public static Bitmap SwapColorsCopy(this Bitmap originalImage, ColorSwapFilter swapFilterData)
+        {
+            BitmapData sourceData = originalImage.LockBits
+                                    (new Rectangle(0, 0, originalImage.Width, originalImage.Height),
+                                    ImageLockMode.ReadOnly, PixelFormat.Format32bppArgb);
+
+            byte[] resultBuffer = new byte[sourceData.Stride * sourceData.Height];
+            Marshal.Copy(sourceData.Scan0, resultBuffer, 0, resultBuffer.Length);
+            originalImage.UnlockBits(sourceData);
+
+            byte sourceBlue = 0, resultBlue = 0,
+                 sourceGreen = 0, resultGreen = 0,
+                 sourceRed = 0, resultRed = 0;
+            byte byte2 = 2, maxValue = 255;
+
+            for (int k = 0; k < resultBuffer.Length; k += 4)
+            {
+                sourceBlue = resultBuffer[k];
+                sourceGreen = resultBuffer[k + 1];
+                sourceRed = resultBuffer[k + 2];
+
+                if (swapFilterData.InvertColorsWhenSwapping == true)
+                {
+                    sourceBlue = (byte)(maxValue - sourceBlue);
+                    sourceGreen = (byte)(maxValue - sourceGreen);
+                    sourceRed = (byte)(maxValue - sourceRed);
+                }
+
+                if (swapFilterData.SwapHalfColorValues == true)
+                {
+                    sourceBlue = (byte)(sourceBlue / byte2);
+                    sourceGreen = (byte)(sourceGreen / byte2);
+                    sourceRed = (byte)(sourceRed / byte2);
+                }
+
+                switch (swapFilterData.SwapType)
+                {
+                    case ColorSwapFilter.ColorSwapType.ShiftRight:
+                        {
+                            resultBlue = sourceGreen;
+                            resultRed = sourceBlue;
+                            resultGreen = sourceRed;
+
+                            break;
+                        }
+                    case ColorSwapFilter.ColorSwapType.ShiftLeft:
+                        {
+                            resultBlue = sourceRed;
+                            resultRed = sourceGreen;
+                            resultGreen = sourceBlue;
+
+                            break;
+                        }
+                    case ColorSwapFilter.ColorSwapType.SwapBlueAndRed:
+                        {
+                            resultBlue = sourceRed;
+                            resultRed = sourceBlue;
+
+                            break;
+                        }
+                    case ColorSwapFilter.ColorSwapType.SwapBlueAndGreen:
+                        {
+                            resultBlue = sourceGreen;
+                            resultGreen = sourceBlue;
+
+                            break;
+                        }
+                    case ColorSwapFilter.ColorSwapType.SwapRedAndGreen:
+                        {
+                            resultRed = sourceGreen;
+                            resultGreen = sourceGreen;
+
+                            break;
+                        }
+                }
+
+                resultBuffer[k] = resultBlue;
+                resultBuffer[k + 1] = resultGreen;
+                resultBuffer[k + 2] = resultRed;
+            }
+
+            Bitmap resultBitmap = new Bitmap(originalImage.Width, originalImage.Height,
+                                             PixelFormat.Format32bppArgb);
+
+            BitmapData resultData = resultBitmap.LockBits
+                                    (new Rectangle(0, 0, resultBitmap.Width, resultBitmap.Height),
+                                    ImageLockMode.WriteOnly, PixelFormat.Format32bppArgb);
+
+            Marshal.Copy(resultBuffer, 0, resultData.Scan0, resultBuffer.Length);
+            resultBitmap.UnlockBits(resultData);
+
+            return resultBitmap;
+        }
+    }
+
+    public class ColorSwapFilter
+    {
+        private ColorSwapType swapType = ColorSwapType.ShiftRight;
+        public ColorSwapType SwapType
+        {
+            get { return swapType; }
+            set { swapType = value; }
+        }
+
+        private bool swapHalfColorValues = false;
+        public bool SwapHalfColorValues
+        {
+            get { return swapHalfColorValues; }
+            set { swapHalfColorValues = value; }
+        }
+
+        private bool invertColorsWhenSwapping = false;
+        public bool InvertColorsWhenSwapping
+        {
+            get { return invertColorsWhenSwapping; }
+            set { invertColorsWhenSwapping = value; }
+        }
+
+        public enum ColorSwapType
+        {
+            ShiftRight,
+            ShiftLeft,
+            SwapBlueAndRed,
+            SwapBlueAndGreen,
+            SwapRedAndGreen,
+        }
+    }
+    public enum EdgeFilterType
+    {
+        None,
+        EdgeDetectMono,
+        EdgeDetectGradient,
+        Sharpen,
+        SharpenGradient,
+    }
+
+    public enum DerivativeLevel
+    {
+        First = 1,
+        Second = 2
+    }
 }
+       

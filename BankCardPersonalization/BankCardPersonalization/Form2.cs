@@ -38,8 +38,19 @@ namespace BankCardPersonalization
             DisplayInstructTwo();
             ImgGradientPrompt();
             cmbCarEffectImplement();
+            cmbColorSwappingImplement();
         }
      
+        public void cmbColorSwappingImplement()
+        {
+            cmbColorSwapping.Items.Add(ColorSwapFilter.ColorSwapType.ShiftLeft);
+            cmbColorSwapping.Items.Add(ColorSwapFilter.ColorSwapType.ShiftRight);
+            cmbColorSwapping.Items.Add(ColorSwapFilter.ColorSwapType.SwapBlueAndGreen);
+            cmbColorSwapping.Items.Add(ColorSwapFilter.ColorSwapType.SwapBlueAndRed);
+            cmbColorSwapping.Items.Add(ColorSwapFilter.ColorSwapType.SwapRedAndGreen);
+
+            cmbColorSwapping.SelectedIndex = 0;
+        }
         public void cmbCarEffectImplement()
         {
             cmbCartoonEffect.Items.Add(CartoonEffect.SmoothingFilterType.Default);
@@ -177,20 +188,28 @@ namespace BankCardPersonalization
                     {
                         case 0:
                             {
-                                ApplyGrayScale();
+                                ApplyFlipping();
                             }break;
                         case 1:
                             {
-                                ApplyInvertEffect();
+                                ApplyGrayScale();
+                                
                             }break;
                         case 2:
                             {
-                                //Implementing 
+                                ApplyInvertEffect();
                             }break;
                     }
                 }
                 
             }
+        }
+
+        private void ApplyFlipping()
+        {
+            Bitmap rotateImage = null;
+            rotateImage = new Bitmap(previewImgBox.Image);
+            previewImgBox.Image = rotateImage.FlipPixels();
         }
 
         private void BrightnessLabel()
@@ -265,6 +284,11 @@ namespace BankCardPersonalization
             if (imageEffect == true)
             {
                 oriBrightnessEffect = oriImageEffect;
+                
+            }
+            else
+            {
+                oriBrightnessEffect = new Bitmap(prvImage);
             }
         }
 
@@ -276,16 +300,18 @@ namespace BankCardPersonalization
         private void trcBrightness_Scroll(object sender, EventArgs e)
         {
             int brightnessVal = trcBrightness.Value;
-            if (imageEffect == true)
-            {
-                oriImageEffect = new Bitmap(oriBrightnessEffect);
-                tempImageEffect = (Bitmap)oriImageEffect.Clone();
-            }
-            else
-            {
-                oriImageEffect = new Bitmap(prvImage);
-                tempImageEffect = (Bitmap)oriImageEffect.Clone();
-            }
+            oriImageEffect = new Bitmap(oriBrightnessEffect);
+            tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            //if (imageEffect == true)
+            //{
+            //    oriImageEffect = new Bitmap(oriBrightnessEffect);
+            //    tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            //}
+            //else
+            //{
+             //   oriImageEffect = new Bitmap(prvImage);
+             //   tempImageEffect = (Bitmap)oriImageEffect.Clone();
+            //}
             if (brightnessVal < -255) brightnessVal = -255;
             if (brightnessVal > 255) brightnessVal = 255;
             Color c;
@@ -326,7 +352,27 @@ namespace BankCardPersonalization
             oriImageEffect = (Bitmap)tempImageEffect.Clone();
             previewImgBox.Image = oriImageEffect;
             previewImgBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            imageEffect = true;
+           // imageEffect = true;
+            //GrabLatestImage(imageEffect);
+            
+        }
+
+        private void ColorEffectChanged(object sender, EventArgs e)
+        {
+            ApplyColorFilter();
+        }
+
+        private void ApplyColorFilter()
+        {
+            if (prvImage != null)
+            {
+                ColorSwapFilter swapFilter = new ColorSwapFilter();
+                swapFilter.SwapType = (ColorSwapFilter.ColorSwapType)cmbColorSwapping.SelectedItem;
+                //swapFilter.InvertColorsWhenSwapping = chkInvertColours.Checked;
+                //swapFilter.SwapHalfColorValues = chkHalfColours.Checked;
+
+                previewImgBox.Image = ((Bitmap)(prvImage)).SwapColorsCopy(swapFilter);
+            }
         }  
     }
 }
